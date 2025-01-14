@@ -1,0 +1,86 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: black;
+    color: white;
+    z-index: 1000; /*volgorde*/
+    display: flex;
+    flex-direction: column; /*flex display instelle*/
+    align-items: center; 
+    padding: 10px 0;
+    
+}
+
+
+.title {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navigation {
+    margin-top: 10px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.content {
+    margin-top: 120px; 
+    padding: 20px;
+}
+
+#uitleg{
+    margin: 50px 460px 50px 460px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+
+.image-container img {
+    max-width: 30%; 
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#titel_populairste{
+    margin-left: 50px;
+    font-size: 42px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#titel_comfortabel{
+    text-align: center;
+    font-size: 42px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
