@@ -3,75 +3,94 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
-
+/* General header styling */
 .header {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%; 
-    background-color: black;
-    color: white;
-    z-index: 1000; /*volgorde*/
     display: flex;
-    flex-direction: column; /*flex display instelle*/
-    align-items: center; 
-    padding: 10px 0;
-    
+    justify-content: space-between; /* Space between title, navigation, and search bar */
+    align-items: center;
+    padding: 20px;
 }
 
-
+/* Styling for the title */
 .title {
     margin: 0;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 24px;
 }
 
+/* Styling for the navigation */
 .navigation {
-    margin-top: 10px;
+    display: flex;
+    gap: 20px;
 }
 
 .navigation a {
-    color: white;
     text-decoration: none;
-    margin: 0 15px;
-    padding: 5px 10px;
+    color: #333;
     font-size: 16px;
 }
 
-.navigation a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 5px;
+/* Styling for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
 }
 
+.search-input {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
 
 .content {
     margin-top: 120px; 
     padding: 20px;
 }
+
 .artikel_founder {
     display: flex; 
     align-items: center; 
-    gap: 20px;
+    justify-content: space-between; /* Zorgt voor een betere verdeling van ruimte tussen tekst en afbeelding */
+    gap: 20px; /* Ruimte tussen de afbeelding en de tekst */
     margin: 40px 20px; 
-    padding: 20px; 
-    border: 1px solid #ccc; 
-    border-radius: 8px;
-    background-color: #f9f9f9; 
+    padding: 30px; /* Ruimte rondom de inhoud */
+    border: 1px solid #ddd; /* Lichtere randkleur voor subtiele scheiding */
+    border-radius: 10px; /* Iets grotere afgeronde hoeken voor een modernere uitstraling */
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea); /* Kleurovergang voor een subtiele visuele impact */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Zachte schaduw rondom de sectie voor diepte */
 }
 
 #uitleg {
     flex: 1; 
     margin: 0;
-    font-size: 25px;
+    font-size: 1.25rem; /* Betere leesbaarheid voor de tekst */
+    line-height: 1.6; /* Verbeterde regelafstand voor leesbaarheid */
+    color: #333; /* Donkere kleur voor tekst om contrast te verbeteren */
+    font-family: 'Arial', sans-serif; /* Lettertype voor een professionele uitstraling */
 }
 
 #founder {
-    max-width: 300px;
+    max-width: 280px; /* Kleinere afbeelding om de ruimte beter te benutten */
     height: auto; 
     border-radius: 8px; 
-    margin: 0; 
+    margin: 0;
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding de juiste verhouding behoudt */
 }
 
 .image-container {
@@ -99,7 +118,7 @@ body {
     font-size: 42px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-/* Footer Styling */
+
 footer {
     background-color: #222; /* Dark background */
     color: #fff; /* White text */
@@ -152,4 +171,138 @@ footer p {
     margin-top: 20px; /* Space above this section */
     color: #aaa; /* Lighter text color for copyright and additional info */
 }
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* 40% van de hoogte van het scherm */
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zorgt ervoor dat de video de container volledig vult en de aspect ratio behouden wordt */
+}
+/* Timeline Section */
+.timeline {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.timeline h2 {
+    font-size: 2.5em;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.timeline-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    color: #111;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.timeline-item p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Circular Timeline Indicator */
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #111;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Sustainability Section */
+.sustainability {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sustainability h2 {
+    font-size: 2.5em;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+.sustainability-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sustainability-box {
+    background-color: #eeeeee;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sustainability-box h3 {
+    color: #111;
+    font-size: 1.5em;
+}
+
+.sustainability-box p {
+    font-size: 1em;
+    color: #030101;
+}
+/* Algemeen voor de locatie-sectie */
+.locaties {
+    background-color: #f0f0f0; /* Lichtgrijze achtergrond voor de sectie */
+    padding: 40px 20px; /* Ruimte rondom de inhoud */
+    text-align: center; /* Centraal uitlijnen van de tekst */
+    border-radius: 10px; /* Afronde hoeken van de sectie */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Zachte schaduw voor diepte-effect */
+}
+
+/* Titel van de locaties-sectie */
+#locaties {
+    font-size: 2.5em; /* Grootte van de titel */
+    color: #111; /* Donkere tekstkleur */
+    margin-bottom: 20px; /* Ruimte onder de titel */
+    font-family: 'Arial', sans-serif; /* Font voor de titel */
+}
+
+/* Container voor de kaart */
+.map-container {
+    max-width: 100%; /* Zorgt ervoor dat de kaart zich aanpast aan de breedte van de container */
+    width: 90%; /* De breedte van de kaart is 90% van het scherm */
+    margin: 0 auto; /* Centreert de container horizontaal */
+    overflow: hidden; /* Zorgt ervoor dat alles netjes in de container past */
+    border-radius: 8px; /* Afronding van de hoeken van de kaart */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Zachte schaduw voor de kaart */
+}
+
+/* Zorg ervoor dat de iframe schaalbaar is voor verschillende schermgroottes */
+.map-container iframe {
+    width: 100%; /* Zorgt ervoor dat de iframe de breedte van de container volgt */
+    height: 450px; /* Specificeer een hoogte voor de kaart */
+    border: none; /* Verwijder de standaard rand van de iframe */
+}
+
 
