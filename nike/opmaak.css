@@ -1,9 +1,9 @@
-
+/*algemene body styling*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-/* General header styling */
+/*algemene header styling*/
 .header {
     display: flex;
     justify-content: space-between; /* Space between title, navigation, and search bar */
@@ -11,30 +11,30 @@ body {
     padding: 20px;
 }
 
-/* Styling for the title */
+/* style voor de titel */
 .title {
     margin: 0;
     font-size: 24px;
 }
 
-/* Styling for the navigation */
+/* Style voor de navigation */
 .navigation {
     display: flex;
     gap: 20px;
 }
-
+/* Style voor de navigation */
 .navigation a {
     text-decoration: none;
     color: #333;
     font-size: 16px;
 }
 
-/* Styling for the search bar */
+/* style voor het zoeken */
 .search-bar {
     display: flex;
     align-items: center;
 }
-
+/* style voor het zoeken */
 .search-input {
     padding: 10px;
     width: 200px;
@@ -42,7 +42,7 @@ body {
     border-radius: 4px;
     font-size: 16px;
 }
-
+/* style voor het zoeken */
 .search-button {
     padding: 10px;
     background-color: #333;
@@ -53,16 +53,17 @@ body {
     font-size: 16px;
     margin-left: 10px;
 }
-
+/* style voor het zoeken */
 .search-button:hover {
     background-color: #555;
 }
 
+/*style content info pagina*/
 .content {
     margin-top: 120px; 
     padding: 20px;
 }
-
+/*style artikel founder*/
 .artikel_founder {
     display: flex; 
     align-items: center; 
@@ -75,7 +76,7 @@ body {
     background: linear-gradient(135deg, #f9f9f9, #eaeaea); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
 }
-
+/*style artikel uitleg content*/
 #uitleg {
     flex: 1; 
     margin: 0;
@@ -84,15 +85,15 @@ body {
     color: #333; 
     font-family: 'Arial', sans-serif; 
 }
-
+/*style foto founder*/
 #founder {
-    max-width: 280px; /* Kleinere afbeelding om de ruimte beter te benutten */
+    max-width: 280px; 
     height: auto; 
     border-radius: 8px; 
     margin: 0;
-    object-fit: cover; /* Zorgt ervoor dat de afbeelding de juiste verhouding behoudt */
+    object-fit: cover; /* juiste verhouding behoude */
 }
-
+/*style foto founder container*/
 .image-container {
     display: flex;
     justify-content: space-between; 
@@ -100,88 +101,87 @@ body {
     padding: 20px;
     flex-wrap: wrap; 
 }
-
+/*schoenen voor pagina*/
 .image-container img {
     max-width: 30%; 
     height: auto; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
-
+/*titels voorpagina*/
 #titel_populairste{
     margin-left: 50px;
     font-size: 42px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+/*titels voorpagina*/
 #titel_comfortabel{
     text-align: center;
     font-size: 42px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
+/*algemene opmaak footer*/
 footer {
-    background-color: #222; /* Dark background */
-    color: #fff; /* White text */
-    padding: 40px 20px; /* Add space around the footer */
-    text-align: left; /* Align text to the left */
+    background-color: #222; 
+    color: #fff; 
+    padding: 40px 20px; 
+    text-align: left;
 }
-
 /* Footer content container */
 .footer-content {
-    display: flex; /* Flexbox layout to align sections horizontally */
-    justify-content: space-between; /* Distribute space evenly between sections */
-    gap: 40px; /* Add space between sections */
-    flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between;
+    gap: 40px; 
+    flex-wrap: wrap; 
 }
-
-/* Footer sections (each column of items) */
+/* Footer sections (verschillende rijen) */
 .footer-section {
-    flex: 1 1 22%; /* Flex-grow and flex-basis to create columns */
-    min-width: 200px; /* Prevent sections from getting too narrow */
-    margin-bottom: 20px; /* Add space between sections vertically */
+    flex: 1 1 22%; /*rijenn maken*/
+    min-width: 200px; 
+    margin-bottom: 20px; 
 }
-
+/*footer titels*/
 .footer-section h4 {
-    font-size: 16px; /* Larger font size for headings */
-    margin-bottom: 10px; /* Add space under the heading */
+    font-size: 16px; 
+    margin-bottom: 10px; 
 }
-
+/*footer lijst*/
 .footer-section ul {
-    list-style-type: none; /* Remove default list styling */
-    padding-left: 0; /* Remove padding */
+    list-style-type: none; 
+    padding-left: 0; 
 }
-
+/*footer lijst*/
 .footer-section ul li {
-    margin-bottom: 8px; /* Space between list items */
+    margin-bottom: 8px; 
 }
-
+/*footer lijst*/
 .footer-section ul li a {
-    color: #fff; /* White links */
-    text-decoration: none; /* Remove underline */
+    color: #fff; 
+    text-decoration: none; 
 }
-
+/*footer lijst*/
 .footer-section ul li a:hover {
-    text-decoration: underline; /* Underline links on hover */
+    text-decoration: underline; 
 }
-
-/* Footer copyright and additional info */
+/* Footer copyright en extra info */
 footer p {
     text-align: center; /* Center-align footer text */
     font-size: 14px; /* Smaller font size for additional info */
     margin-top: 20px; /* Space above this section */
     color: #aaa; /* Lighter text color for copyright and additional info */
 }
+/*video homepage*/
 .video-container {
     position: relative;
     width: 100%;
     height: 60vh; /* 40% van de hoogte van het scherm */
     overflow: hidden;
 }
-
+/*video homepage*/
 .video-container video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Zorgt ervoor dat de video de container volledig vult en de aspect ratio behouden wordt */
+    object-fit: cover; /* Zorgt ervoor dat de video de container volledig vult en de aspect ratio niet behouden wordt */
 }
 /* Timeline Section */
 .timeline {
@@ -271,15 +271,6 @@ footer p {
     font-size: 1em;
     color: #030101;
 }
-
-
-
-
-
-
-
-
-
 /*instellingen contact page*/
 #nike-contact-page {
     font-family: Arial, sans-serif;
@@ -363,3 +354,97 @@ footer p {
     border-radius: 8px;
 }
 
+/* Beperk stijlen tot de .nike-page en .nike-container */
+.nike-page .nike-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nike-page .nike-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.nike-page .nike-container h2 {
+    color: #333;
+    margin-top: 1.5rem;
+}
+
+.nike-page .nike-container p {
+    margin: 0.5rem 0;
+}
+
+.nike-page .nike-container ul {
+    list-style-type: disc;
+    margin: 1rem 0 1rem 1.5rem;
+    padding: 0;
+}
+
+.nike-page .nike-container li {
+    margin: 0.5rem 0;
+}
+
+.nike-page .nike-container a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.nike-page .nike-container a:hover {
+    text-decoration: underline;
+}
+
+.nike-info-page {
+    margin-top: 100px; /* Zorg ervoor dat de inhoud niet overlapt met header of footer */
+}
+
+.nike-info-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.nike-info-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.nike-info-page h2 {
+    color: #111;
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.nike-info-page p {
+    margin: 0.5rem 0 1rem;
+}
+
+.nike-info-page ul {
+    list-style-type: disc;
+    margin: 1rem 0 1rem 1.5rem;
+    padding: 0;
+}
+
+.nike-info-page li {
+    margin: 0.5rem 0;
+}
+
+.nike-info-page a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.nike-info-page a:hover {
+    text-decoration: underline;
+}
